@@ -1,0 +1,27 @@
+{
+  "name": "cannaconscious",
+  "version": "1.0.0",
+  "description": "CannaConscious - Cannabis Business Consulting Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "prod": "npm run build && npm run start"
+  },
+  "keywords": [
+    "cannabis",
+    "consulting",
+    "business",
+    "mern"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
